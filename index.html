@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tee S Fang</title>
+  <meta name="description" content="Tee S Fang — homelab, crypto, automation">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --green: #3fb950;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 2rem; flex: 1; }
+    header { padding: 3rem 0 2rem; }
+    h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); font-size: 1.05rem; margin-top: 0.4rem; }
+    .bio { margin-top: 1.5rem; color: var(--text); font-size: 0.95rem; max-width: 580px; }
+    .section { margin-top: 2.5rem; }
+    .section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+    .project {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 0.6rem;
+      transition: border-color 0.2s;
+    }
+    .project:hover { border-color: var(--accent); }
+    .project h3 { font-size: 0.95rem; font-weight: 600; }
+    .project h3 a { color: var(--accent); text-decoration: none; }
+    .project h3 a:hover { text-decoration: underline; }
+    .project p { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+    .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .links a:hover { text-decoration: underline; }
+    footer { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 2rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tee S Fang</h1>
+      <div class="subtitle">homelab &middot; automation &middot; crypto</div>
+      <p class="bio">
+        Building things in Singapore. Home lab operator, crypto tinkerer,
+        pen plotter enthusiast, and Hermes Agent user.
+      </p>
+    </header>
+
+    <section class="section">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3><a href="https://github.com/teesfang">Hermes Trading</a></h3>
+        <p>Automated crypto trading scripts — BTC, LTC, XLM — with RSI-based signals and no-agent loop execution.</p>
+      </div>
+
+      <div class="project">
+        <h3>Pen Plotter</h3>
+        <p>GRBL-based BtWriter running on ESP32. Custom daemon scripts, coordinate-entry workflows, and firmware backup tooling.</p>
+      </div>
+
+      <div class="project">
+        <h3>Home Lab</h3>
+        <p>AsusServer, Pi-hole, Home Assistant, 6 dashboards, WiFi 7 router — fully Dockerised stack on the homelab network.</p>
+      </div>
+
+      <div class="project">
+        <h3><a href="https://github.com/teesfang/tgifang.github.io">tgifang.github.io</a></h3>
+        <p>Original GitHub Pages project site (2014 vintage, still live).</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Find Me</h2>
+      <div class="links">
+        <a href="https://github.com/teesfang">GitHub</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2026 Tee S Fang
+  </footer>
+</body>
+</html>
